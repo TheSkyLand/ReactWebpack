@@ -1,0 +1,14 @@
+import counterStore from "../store/CounterStore";
+
+import { observer } from "mobx-react";
+
+const Mobx = observer(() => {
+    return <div>
+        <h1>{counterStore.count}</h1>
+        <button onClick={counterStore.increment}>+</button>
+        <button onClick={counterStore.decrement}>-</button>
+        <h2>{counterStore.doubleCount}</h2>
+    </div>
+});
+
+export default Mobx;
