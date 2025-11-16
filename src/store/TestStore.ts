@@ -1,6 +1,6 @@
 import { makeObservable, observable, action, runInAction, computed } from 'mobx';
 import { testData } from '../api/controllers/main-controller';
-import { testDataDto } from '../../types/testData';
+import { testDataDto } from '../types/testData';
 
 export class TestStore {
     testData: testDataDto[] = [];
